@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBC7AF4025E1936D00117E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */; };
+		FBC7AF4225E1936D00117E4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF4125E1936D00117E4A /* ContentView.swift */; };
+		FBC7AF4525E1936D00117E4A /* ColorRecommendor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF4325E1936D00117E4A /* ColorRecommendor.xcdatamodeld */; };
+		FBC7AF4725E1936E00117E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC7AF4625E1936E00117E4A /* Assets.xcassets */; };
+		FBC7AF4A25E1936E00117E4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC7AF4925E1936E00117E4A /* Preview Assets.xcassets */; };
+		FBC7AF4D25E1936E00117E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC7AF4B25E1936E00117E4A /* Main.storyboard */; };
+		FBC7AF5925E1936F00117E4A /* ColorRecommendorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF5825E1936F00117E4A /* ColorRecommendorTests.swift */; };
+		FBC7AF6425E1936F00117E4A /* ColorRecommendorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF6325E1936F00117E4A /* ColorRecommendorUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBC7AF5525E1936F00117E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC7AF3425E1936D00117E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC7AF3B25E1936D00117E4A;
+			remoteInfo = ColorRecommendor;
+		};
+		FBC7AF6025E1936F00117E4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC7AF3425E1936D00117E4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBC7AF3B25E1936D00117E4A;
+			remoteInfo = ColorRecommendor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBC7AF3C25E1936D00117E4A /* ColorRecommendor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorRecommendor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBC7AF4125E1936D00117E4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBC7AF4425E1936D00117E4A /* ColorRecommendor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ColorRecommendor.xcdatamodel; sourceTree = "<group>"; };
+		FBC7AF4625E1936E00117E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBC7AF4925E1936E00117E4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FBC7AF4C25E1936E00117E4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBC7AF4E25E1936E00117E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC7AF4F25E1936E00117E4A /* ColorRecommendor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorRecommendor.entitlements; sourceTree = "<group>"; };
+		FBC7AF5425E1936F00117E4A /* ColorRecommendorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorRecommendorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC7AF5825E1936F00117E4A /* ColorRecommendorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRecommendorTests.swift; sourceTree = "<group>"; };
+		FBC7AF5A25E1936F00117E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC7AF5F25E1936F00117E4A /* ColorRecommendorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorRecommendorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBC7AF6325E1936F00117E4A /* ColorRecommendorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRecommendorUITests.swift; sourceTree = "<group>"; };
+		FBC7AF6525E1936F00117E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBC7AF3925E1936D00117E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC7AF5125E1936F00117E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC7AF5C25E1936F00117E4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBC7AF3325E1936D00117E4A = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF3E25E1936D00117E4A /* ColorRecommendor */,
+				FBC7AF5725E1936F00117E4A /* ColorRecommendorTests */,
+				FBC7AF6225E1936F00117E4A /* ColorRecommendorUITests */,
+				FBC7AF3D25E1936D00117E4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBC7AF3D25E1936D00117E4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF3C25E1936D00117E4A /* ColorRecommendor.app */,
+				FBC7AF5425E1936F00117E4A /* ColorRecommendorTests.xctest */,
+				FBC7AF5F25E1936F00117E4A /* ColorRecommendorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBC7AF3E25E1936D00117E4A /* ColorRecommendor */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */,
+				FBC7AF4125E1936D00117E4A /* ContentView.swift */,
+				FBC7AF4625E1936E00117E4A /* Assets.xcassets */,
+				FBC7AF4B25E1936E00117E4A /* Main.storyboard */,
+				FBC7AF4E25E1936E00117E4A /* Info.plist */,
+				FBC7AF4F25E1936E00117E4A /* ColorRecommendor.entitlements */,
+				FBC7AF4325E1936D00117E4A /* ColorRecommendor.xcdatamodeld */,
+				FBC7AF4825E1936E00117E4A /* Preview Content */,
+			);
+			path = ColorRecommendor;
+			sourceTree = "<group>";
+		};
+		FBC7AF4825E1936E00117E4A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF4925E1936E00117E4A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FBC7AF5725E1936F00117E4A /* ColorRecommendorTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF5825E1936F00117E4A /* ColorRecommendorTests.swift */,
+				FBC7AF5A25E1936F00117E4A /* Info.plist */,
+			);
+			path = ColorRecommendorTests;
+			sourceTree = "<group>";
+		};
+		FBC7AF6225E1936F00117E4A /* ColorRecommendorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF6325E1936F00117E4A /* ColorRecommendorUITests.swift */,
+				FBC7AF6525E1936F00117E4A /* Info.plist */,
+			);
+			path = ColorRecommendorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBC7AF3B25E1936D00117E4A /* ColorRecommendor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC7AF6825E1936F00117E4A /* Build configuration list for PBXNativeTarget "ColorRecommendor" */;
+			buildPhases = (
+				FBC7AF3825E1936D00117E4A /* Sources */,
+				FBC7AF3925E1936D00117E4A /* Frameworks */,
+				FBC7AF3A25E1936D00117E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ColorRecommendor;
+			productName = ColorRecommendor;
+			productReference = FBC7AF3C25E1936D00117E4A /* ColorRecommendor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBC7AF5325E1936F00117E4A /* ColorRecommendorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC7AF6B25E1936F00117E4A /* Build configuration list for PBXNativeTarget "ColorRecommendorTests" */;
+			buildPhases = (
+				FBC7AF5025E1936F00117E4A /* Sources */,
+				FBC7AF5125E1936F00117E4A /* Frameworks */,
+				FBC7AF5225E1936F00117E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC7AF5625E1936F00117E4A /* PBXTargetDependency */,
+			);
+			name = ColorRecommendorTests;
+			productName = ColorRecommendorTests;
+			productReference = FBC7AF5425E1936F00117E4A /* ColorRecommendorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FBC7AF5E25E1936F00117E4A /* ColorRecommendorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBC7AF6E25E1936F00117E4A /* Build configuration list for PBXNativeTarget "ColorRecommendorUITests" */;
+			buildPhases = (
+				FBC7AF5B25E1936F00117E4A /* Sources */,
+				FBC7AF5C25E1936F00117E4A /* Frameworks */,
+				FBC7AF5D25E1936F00117E4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC7AF6125E1936F00117E4A /* PBXTargetDependency */,
+			);
+			name = ColorRecommendorUITests;
+			productName = ColorRecommendorUITests;
+			productReference = FBC7AF5F25E1936F00117E4A /* ColorRecommendorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBC7AF3425E1936D00117E4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FBC7AF3B25E1936D00117E4A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					FBC7AF5325E1936F00117E4A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FBC7AF3B25E1936D00117E4A;
+					};
+					FBC7AF5E25E1936F00117E4A = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = FBC7AF3B25E1936D00117E4A;
+					};
+				};
+			};
+			buildConfigurationList = FBC7AF3725E1936D00117E4A /* Build configuration list for PBXProject "ColorRecommendor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBC7AF3325E1936D00117E4A;
+			productRefGroup = FBC7AF3D25E1936D00117E4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBC7AF3B25E1936D00117E4A /* ColorRecommendor */,
+				FBC7AF5325E1936F00117E4A /* ColorRecommendorTests */,
+				FBC7AF5E25E1936F00117E4A /* ColorRecommendorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBC7AF3A25E1936D00117E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC7AF4D25E1936E00117E4A /* Main.storyboard in Resources */,
+				FBC7AF4A25E1936E00117E4A /* Preview Assets.xcassets in Resources */,
+				FBC7AF4725E1936E00117E4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC7AF5225E1936F00117E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC7AF5D25E1936F00117E4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBC7AF3825E1936D00117E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC7AF4225E1936D00117E4A /* ContentView.swift in Sources */,
+				FBC7AF4525E1936D00117E4A /* ColorRecommendor.xcdatamodeld in Sources */,
+				FBC7AF4025E1936D00117E4A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC7AF5025E1936F00117E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC7AF5925E1936F00117E4A /* ColorRecommendorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBC7AF5B25E1936F00117E4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC7AF6425E1936F00117E4A /* ColorRecommendorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBC7AF5625E1936F00117E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC7AF3B25E1936D00117E4A /* ColorRecommendor */;
+			targetProxy = FBC7AF5525E1936F00117E4A /* PBXContainerItemProxy */;
+		};
+		FBC7AF6125E1936F00117E4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBC7AF3B25E1936D00117E4A /* ColorRecommendor */;
+			targetProxy = FBC7AF6025E1936F00117E4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBC7AF4B25E1936E00117E4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBC7AF4C25E1936E00117E4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBC7AF6625E1936F00117E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FBC7AF6725E1936F00117E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FBC7AF6925E1936F00117E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ColorRecommendor/ColorRecommendor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ColorRecommendor/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AMQKU48U7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ColorRecommendor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielphiri.ColorRecommendor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FBC7AF6A25E1936F00117E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ColorRecommendor/ColorRecommendor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ColorRecommendor/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AMQKU48U7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ColorRecommendor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielphiri.ColorRecommendor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FBC7AF6C25E1936F00117E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9AMQKU48U7;
+				INFOPLIST_FILE = ColorRecommendorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielphiri.ColorRecommendorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorRecommendor.app/Contents/MacOS/ColorRecommendor";
+			};
+			name = Debug;
+		};
+		FBC7AF6D25E1936F00117E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9AMQKU48U7;
+				INFOPLIST_FILE = ColorRecommendorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielphiri.ColorRecommendorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ColorRecommendor.app/Contents/MacOS/ColorRecommendor";
+			};
+			name = Release;
+		};
+		FBC7AF6F25E1936F00117E4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9AMQKU48U7;
+				INFOPLIST_FILE = ColorRecommendorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielphiri.ColorRecommendorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ColorRecommendor;
+			};
+			name = Debug;
+		};
+		FBC7AF7025E1936F00117E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9AMQKU48U7;
+				INFOPLIST_FILE = ColorRecommendorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielphiri.ColorRecommendorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ColorRecommendor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBC7AF3725E1936D00117E4A /* Build configuration list for PBXProject "ColorRecommendor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC7AF6625E1936F00117E4A /* Debug */,
+				FBC7AF6725E1936F00117E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC7AF6825E1936F00117E4A /* Build configuration list for PBXNativeTarget "ColorRecommendor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC7AF6925E1936F00117E4A /* Debug */,
+				FBC7AF6A25E1936F00117E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC7AF6B25E1936F00117E4A /* Build configuration list for PBXNativeTarget "ColorRecommendorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC7AF6C25E1936F00117E4A /* Debug */,
+				FBC7AF6D25E1936F00117E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBC7AF6E25E1936F00117E4A /* Build configuration list for PBXNativeTarget "ColorRecommendorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBC7AF6F25E1936F00117E4A /* Debug */,
+				FBC7AF7025E1936F00117E4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FBC7AF4325E1936D00117E4A /* ColorRecommendor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FBC7AF4425E1936D00117E4A /* ColorRecommendor.xcdatamodel */,
+			);
+			currentVersion = FBC7AF4425E1936D00117E4A /* ColorRecommendor.xcdatamodel */;
+			path = ColorRecommendor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FBC7AF3425E1936D00117E4A /* Project object */;
+}
