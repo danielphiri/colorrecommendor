@@ -18,9 +18,19 @@ class ColorRecommendorTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testMainModel() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+      let model = MainModel()
+      // Test 1 Colors Returned from search
+      let whiteColorString = "Wh"
+      let returnedColors = model.getAllColors(matching: whiteColorString)
+      XCTAssert(returnedColors.contains { $0.name == "White"}, "Couldn't find White color")
+      
+      // Test 2 Colors Returned from search with Full Text
+      let redFullString = "Red"
+      let returnedColors2 = model.getAllColors(matching: redFullString)
+      XCTAssert(returnedColors2.contains { $0.name == "Red"}, "Couldn't find Red color")
     }
 
     func testPerformanceExample() throws {
