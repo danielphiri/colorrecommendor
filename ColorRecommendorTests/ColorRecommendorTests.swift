@@ -31,6 +31,7 @@ class ColorRecommendorTests: XCTestCase {
       let redFullString = "Red"
       let returnedColors2 = model.getAllColors(matching: redFullString)
       XCTAssert(returnedColors2.contains { $0.name == "Red"}, "Couldn't find Red color")
+      
     }
 
     func testPerformanceExample() throws {
