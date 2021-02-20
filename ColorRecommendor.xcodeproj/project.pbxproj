@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FBC7AF4025E1936D00117E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */; };
-		FBC7AF4225E1936D00117E4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF4125E1936D00117E4A /* ContentView.swift */; };
+		FBC7AF4225E1936D00117E4A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF4125E1936D00117E4A /* MainView.swift */; };
 		FBC7AF4525E1936D00117E4A /* ColorRecommendor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF4325E1936D00117E4A /* ColorRecommendor.xcdatamodeld */; };
 		FBC7AF4725E1936E00117E4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC7AF4625E1936E00117E4A /* Assets.xcassets */; };
 		FBC7AF4A25E1936E00117E4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBC7AF4925E1936E00117E4A /* Preview Assets.xcassets */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		FBC7AF3C25E1936D00117E4A /* ColorRecommendor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorRecommendor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBC7AF4125E1936D00117E4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FBC7AF4125E1936D00117E4A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FBC7AF4425E1936D00117E4A /* ColorRecommendor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ColorRecommendor.xcdatamodel; sourceTree = "<group>"; };
 		FBC7AF4625E1936E00117E4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FBC7AF4925E1936E00117E4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -149,6 +149,7 @@
 		FBC7AF7525E193B600117E4A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FBC7AF4125E1936D00117E4A /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */,
-				FBC7AF4125E1936D00117E4A /* ContentView.swift */,
 				FBC7AF4625E1936E00117E4A /* Assets.xcassets */,
 				FBC7AF4B25E1936E00117E4A /* Main.storyboard */,
 				FBC7AF4E25E1936E00117E4A /* Info.plist */,
@@ -307,7 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBC7AF8225E1997700117E4A /* MainModel.swift in Sources */,
-				FBC7AF4225E1936D00117E4A /* ContentView.swift in Sources */,
+				FBC7AF4225E1936D00117E4A /* MainView.swift in Sources */,
 				FBC7AF4525E1936D00117E4A /* ColorRecommendor.xcdatamodeld in Sources */,
 				FBC7AF4025E1936D00117E4A /* AppDelegate.swift in Sources */,
 				FBC7AF9025E19DF900117E4A /* MenuColorItem.swift in Sources */,
