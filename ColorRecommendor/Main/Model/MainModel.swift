@@ -37,8 +37,26 @@ final class MainModel: Mainable {
       "Purple": "800080"
     ]
   
-  func getAllColors(matching: String) -> [MenuColorItem] {
-    return []
+  
+  func getAllColors(matching text: String) -> [MenuColorItem] {
+    var colors: [MenuColorItem] = []
+    if text == "" {
+      return colors
+      for color in colorsDic {
+        colors.append(MenuColorItem(name: color.key, hexValue: color.value, machingIndeces: getMatchingIndices(word1: text, word2: color.key)))
+      }
+      return colors
+    }
+
+    for color in colorsDic {
+//      if color.key.lowercased() == text.lowercased() {
+//        return []
+//      }
+      if color.key.lowercased().contains(text.lowercased()) {
+        colors.append(MenuColorItem(name: color.key, hexValue: color.value, machingIndeces: getMatchingIndices(word1: text, word2: color.key)))
+      }
+    }
+    return colors
   }
   
 //  func getScreenWidth() -> CGFloat {
@@ -51,6 +69,30 @@ final class MainModel: Mainable {
   
   func getLetter(from: String) -> String {
     return ""
+  }
+  
+  // Return indices for all  words in word1 that are contained in word2
+  private func getMatchingIndices(word1: String, word2: String) -> [Int] {
+    var indeces: [Int] = []
+    for _ in 0..<word2.count {
+      indeces.append(0)
+    }
+    if word1 == "" {
+      #warning("TODO: Find cleaner way of doing this")
+      for index in 0..<word2.count {
+        indeces[index] = 1
+      }
+      return indeces
+    }
+    for char in word1.lowercased() {
+      for (index, char2) in word2.lowercased().enumerated() {
+        if char == char2 {
+          indeces[index] = 1
+        }
+      }
+    }
+    
+    return indeces
   }
   
 }
