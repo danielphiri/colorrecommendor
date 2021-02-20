@@ -9,14 +9,14 @@ import SwiftUI
 import Foundation
 
 
-protocol Mainable {
+protocol MainModelable {
   func getAllColors(matching: String) -> [MenuColorItem]
 //  func getScreenWidth() -> CGFloat
   func getPreviousIndex(text: String) -> Int
   func getLetter(from: String) -> String
 }
 
-final class MainModel: Mainable {
+final class MainModel: MainModelable {
   
   private let colorsDic: [String: String] = [
       "White" : "FFFFFF",
