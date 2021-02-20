@@ -15,6 +15,7 @@
 		FBC7AF4D25E1936E00117E4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC7AF4B25E1936E00117E4A /* Main.storyboard */; };
 		FBC7AF5925E1936F00117E4A /* ColorRecommendorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF5825E1936F00117E4A /* ColorRecommendorTests.swift */; };
 		FBC7AF6425E1936F00117E4A /* ColorRecommendorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF6325E1936F00117E4A /* ColorRecommendorUITests.swift */; };
+		FBC7AF8225E1997700117E4A /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF8125E1997600117E4A /* MainModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		FBC7AF5F25E1936F00117E4A /* ColorRecommendorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorRecommendorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC7AF6325E1936F00117E4A /* ColorRecommendorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRecommendorUITests.swift; sourceTree = "<group>"; };
 		FBC7AF6525E1936F00117E4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC7AF8125E1997600117E4A /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,13 +102,8 @@
 		FBC7AF3E25E1936D00117E4A /* ColorRecommendor */ = {
 			isa = PBXGroup;
 			children = (
-				FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */,
-				FBC7AF4125E1936D00117E4A /* ContentView.swift */,
-				FBC7AF4625E1936E00117E4A /* Assets.xcassets */,
-				FBC7AF4B25E1936E00117E4A /* Main.storyboard */,
-				FBC7AF4E25E1936E00117E4A /* Info.plist */,
-				FBC7AF4F25E1936E00117E4A /* ColorRecommendor.entitlements */,
-				FBC7AF4325E1936D00117E4A /* ColorRecommendor.xcdatamodeld */,
+				FBC7AF7725E193D600117E4A /* Utils */,
+				FBC7AF7425E193A300117E4A /* Main */,
 				FBC7AF4825E1936E00117E4A /* Preview Content */,
 			);
 			path = ColorRecommendor;
@@ -136,6 +133,44 @@
 				FBC7AF6525E1936F00117E4A /* Info.plist */,
 			);
 			path = ColorRecommendorUITests;
+			sourceTree = "<group>";
+		};
+		FBC7AF7425E193A300117E4A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF7625E193BF00117E4A /* Model */,
+				FBC7AF7525E193B600117E4A /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FBC7AF7525E193B600117E4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FBC7AF7625E193BF00117E4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF8125E1997600117E4A /* MainModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FBC7AF7725E193D600117E4A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */,
+				FBC7AF4125E1936D00117E4A /* ContentView.swift */,
+				FBC7AF4625E1936E00117E4A /* Assets.xcassets */,
+				FBC7AF4B25E1936E00117E4A /* Main.storyboard */,
+				FBC7AF4E25E1936E00117E4A /* Info.plist */,
+				FBC7AF4F25E1936E00117E4A /* ColorRecommendor.entitlements */,
+				FBC7AF4325E1936D00117E4A /* ColorRecommendor.xcdatamodeld */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBC7AF8225E1997700117E4A /* MainModel.swift in Sources */,
 				FBC7AF4225E1936D00117E4A /* ContentView.swift in Sources */,
 				FBC7AF4525E1936D00117E4A /* ColorRecommendor.xcdatamodeld in Sources */,
 				FBC7AF4025E1936D00117E4A /* AppDelegate.swift in Sources */,
@@ -437,14 +473,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ColorRecommendor/ColorRecommendor.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ColorRecommendor/Utils/ColorRecommendor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ColorRecommendor/Preview Content\"";
 				DEVELOPMENT_TEAM = 9AMQKU48U7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ColorRecommendor/Info.plist;
+				INFOPLIST_FILE = ColorRecommendor/Utils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -461,14 +497,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ColorRecommendor/ColorRecommendor.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ColorRecommendor/Utils/ColorRecommendor.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ColorRecommendor/Preview Content\"";
 				DEVELOPMENT_TEAM = 9AMQKU48U7;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = ColorRecommendor/Info.plist;
+				INFOPLIST_FILE = ColorRecommendor/Utils/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
