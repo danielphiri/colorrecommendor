@@ -8,15 +8,22 @@
 import SwiftUI
 
 struct MainView: View {
-    var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-    }
+  private let model: MainModelable
+  
+  init(_ model: MainModelable) {
+    self.model = model
+  }
+  
+  var body: some View {
+    Text("Hello, World!")
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+  }
 }
 
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+      let model = MainModel()
+            MainView(model)
     }
 }
