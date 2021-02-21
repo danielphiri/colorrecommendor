@@ -11,9 +11,6 @@ import Foundation
 
 protocol MainModelable {
   func getAllColors(matching: String) -> [MenuColorItem]
-//  func getScreenWidth() -> CGFloat
-  func getPreviousIndex(text: String) -> Int
-  func getLetter(from: String) -> String
 }
 
 final class MainModel: MainModelable {
@@ -49,26 +46,11 @@ final class MainModel: MainModelable {
     }
 
     for color in colorsDic {
-//      if color.key.lowercased() == text.lowercased() {
-//        return []
-//      }
       if color.key.lowercased().contains(text.lowercased()) {
         colors.append(MenuColorItem(name: color.key, hexValue: color.value, machingIndeces: getMatchingIndices(word1: text, word2: color.key)))
       }
     }
     return colors
-  }
-  
-//  func getScreenWidth() -> CGFloat {
-//    return
-//  }
-  
-  func getPreviousIndex(text: String) -> Int {
-    return 0
-  }
-  
-  func getLetter(from: String) -> String {
-    return ""
   }
   
   // Return indices for all  words in word1 that are contained in word2
