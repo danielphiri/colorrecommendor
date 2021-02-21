@@ -22,7 +22,7 @@ struct MainView: View {
     VStack(spacing: 0) {
       searchBar
         .frame(width: nil, height: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-        .padding(.init(top: 0, leading: 10, bottom: -3, trailing: 5))
+        .padding(.init(top: 0, leading: 10, bottom: -3, trailing: 10))
         .background(backgroundColor)
        ZStack {
          backgroundColor
@@ -89,7 +89,7 @@ extension MainView {
           }
         }
       }
-      .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 5))
+      .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 10))
       .shadow(color: .gray, radius: 1.0, x: 0, y: 0)
     )
     .opacity(menuOpacity)
