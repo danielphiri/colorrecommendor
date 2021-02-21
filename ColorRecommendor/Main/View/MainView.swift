@@ -55,59 +55,45 @@ struct MainView: View {
     )
   }
   
-  var searchBarBackground: some View {
-    return (
-      VStack {
-        Rectangle()
-          .border(Color.gray)
-          .cornerRadius(4)
-          .foregroundColor(.white)
-          .shadow(color: .green, radius: 1.0, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/)
-      }
-    )
-  }
-  
-  
 }
 
 
 extension MainView {
   var menuFeedItems: some View {
-      return (
-        List {
-          ForEach(model.getAllColors(matching: searchText)) { menuItem in
-            HStack {
-              Image.init(systemName: "clock")
-                .foregroundColor(.black)
-                .background(Color.purple)
-              
-              HStack(spacing: 0) {
-                ForEach.init(menuItem.machingIndeces) { res in
-                  if res.num == 0 {
-                    Text(res.text)
-                      .font(.system(size: 12, weight: .semibold))
-                      .foregroundColor(.gray)
-                  } else {
-                    Text(res.text)
-                      .font(.system(size: 12, weight: .semibold))
-                      .foregroundColor(.black)
-                  }
+    return (
+      List {
+        ForEach(model.getAllColors(matching: searchText)) { menuItem in
+          HStack {
+            Image.init(systemName: "clock")
+              .foregroundColor(.black)
+            
+            HStack(spacing: 0) {
+              ForEach.init(menuItem.machingIndeces) { res in
+                if res.num == 0 {
+                  Text(res.text)
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundColor(.gray)
+                } else {
+                  Text(res.text)
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundColor(.black)
                 }
               }
-              .onTapGesture {
-                backgroundColor = Color(hex: menuItem.hexValue)
-                menuOpacity = 0.0
-                searchText = menuItem.name
-                searchingDone = true
-              }
+            }
+            .onTapGesture {
+              backgroundColor = Color(hex: menuItem.hexValue)
+              menuOpacity = 0.0
+              searchText = menuItem.name
+              searchingDone = true
             }
           }
         }
-        .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 5))
-        .shadow(color: .gray, radius: 1.0, x: 0, y: 0)
-      )
-      .opacity(menuOpacity)
-    }
+      }
+      .padding(.init(top: 0, leading: 10, bottom: 0, trailing: 5))
+      .shadow(color: .gray, radius: 1.0, x: 0, y: 0)
+    )
+    .opacity(menuOpacity)
+  }
 }
 
 
