@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FBB5053F25E1C535000BD863 /* AttributedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB5053E25E1C535000BD863 /* AttributedLabel.swift */; };
 		FBC7AF4025E1936D00117E4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */; };
 		FBC7AF4225E1936D00117E4A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF4125E1936D00117E4A /* MainView.swift */; };
 		FBC7AF4525E1936D00117E4A /* ColorRecommendor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBC7AF4325E1936D00117E4A /* ColorRecommendor.xcdatamodeld */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FBB5053E25E1C535000BD863 /* AttributedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedLabel.swift; sourceTree = "<group>"; };
 		FBC7AF3C25E1936D00117E4A /* ColorRecommendor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorRecommendor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC7AF3F25E1936D00117E4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBC7AF4125E1936D00117E4A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FBC7AF4125E1936D00117E4A /* MainView.swift */,
+				FBB5053E25E1C535000BD863 /* AttributedLabel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 			files = (
 				FBC7AF8225E1997700117E4A /* MainModel.swift in Sources */,
 				FBC7AF4225E1936D00117E4A /* MainView.swift in Sources */,
+				FBB5053F25E1C535000BD863 /* AttributedLabel.swift in Sources */,
 				FBC7AF4525E1936D00117E4A /* ColorRecommendor.xcdatamodeld in Sources */,
 				FBC7AF4025E1936D00117E4A /* AppDelegate.swift in Sources */,
 				FBC7AF9025E19DF900117E4A /* MenuColorItem.swift in Sources */,

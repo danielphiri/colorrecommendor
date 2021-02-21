@@ -72,22 +72,22 @@ final class MainModel: MainModelable {
   }
   
   // Return indices for all  words in word1 that are contained in word2
-  private func getMatchingIndices(word1: String, word2: String) -> [Int] {
-    var indeces: [Int] = []
-    for _ in 0..<word2.count {
-      indeces.append(0)
+  private func getMatchingIndices(word1: String, word2: String) -> [StringIndex] {
+    var indeces: [StringIndex] = []
+    for (_, char) in word2.enumerated() {
+      indeces.append(StringIndex(num: 0, text: String(char)))
     }
     if word1 == "" {
       #warning("TODO: Find cleaner way of doing this")
-      for index in 0..<word2.count {
-        indeces[index] = 1
+      for (index, char) in word2.enumerated() {
+        indeces[index] = StringIndex(num: 1, text: String(char))
       }
       return indeces
     }
     for char in word1.lowercased() {
       for (index, char2) in word2.lowercased().enumerated() {
         if char == char2 {
-          indeces[index] = 1
+          indeces[index] = StringIndex(num: 1, text: String(word2.map {String($0)}[index]))
         }
       }
     }
