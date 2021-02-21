@@ -39,10 +39,6 @@ final class MainModel: MainModelable {
     var colors: [MenuColorItem] = []
     if text == "" {
       return colors
-      for color in colorsDic {
-        colors.append(MenuColorItem(name: color.key, hexValue: color.value, machingIndeces: getMatchingIndices(word1: text, word2: color.key)))
-      }
-      return colors
     }
 
     for color in colorsDic {
@@ -60,7 +56,6 @@ final class MainModel: MainModelable {
       indeces.append(StringIndex(num: 0, text: String(char)))
     }
     if word1 == "" {
-      #warning("TODO: Find cleaner way of doing this")
       for (index, char) in word2.enumerated() {
         indeces[index] = StringIndex(num: 1, text: String(char))
       }
@@ -73,7 +68,6 @@ final class MainModel: MainModelable {
         }
       }
     }
-    
     return indeces
   }
   
